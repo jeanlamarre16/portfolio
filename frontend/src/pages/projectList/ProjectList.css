@@ -1,0 +1,73 @@
+div.container-projectlist {
+  display: grid;
+  grid: auto-flow / 1fr 1fr 1fr 1fr;
+  margin: 10rem auto;
+  width: 80%;
+  gap: 2rem;
+  grid-auto-columns: 400px;
+}
+
+div.card-details img.img-project {
+  width: auto;
+  height: 180px;
+  object-fit: cover;
+}
+
+div.card-details {
+  background-color: lavender;
+  margin: 2rem;
+  border-radius: 1rem;
+  height: 20rem;
+  transition: all ease-in-out 0.3s;
+  width: 100%;
+}
+
+.card-details:hover {
+  transform: scale(1.2);
+}
+
+button {
+  background: lavender;
+  color: #333;
+  transition: all ease-in-out 0.4s;
+  border-radius: 1rem;
+  outline: inset rgba(128, 128, 128, 0.4);
+  border: 0.1px;
+  padding: 0.2rem 1rem;
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+div.card-details .btn-div {
+  background: #a4cdf3;
+  position: relative;
+  top: -0.3rem;
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0 2px 4px #a4cdf3;
+  z-index: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: rgba(51, 51, 51, 0.7);
+}
+
+h1::first-letter {
+  font-size: 1.5rem;
+  color: red;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  div.container-projectlist {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    width: 100%;
+    background: blue;
+  }
+
+  .card-details:hover {
+    transform: scale(1);
+  }
+}

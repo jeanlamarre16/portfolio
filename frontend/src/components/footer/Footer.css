@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+.social-network-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.github-icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  cursor: pointer;
+}
+
+div.div-footer {
+  background: #a4cdf3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  height: 12rem;
+  margin-top: 2rem;
+}
+
+div.social-network {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+}
+
+.div-footer p {
+  margin-bottom: 12rem;
+}
+
+@media (max-width: 767px) {
+}

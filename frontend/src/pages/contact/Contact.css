@@ -1,0 +1,129 @@
+.div-form-container {
+  margin-top: 10rem;
+}
+
+form.form-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 0 auto;
+  width: 60vw;
+  flex-grow: 1;
+}
+
+form.form-contact p {
+  margin-bottom: 0.3rem;
+}
+
+form.form-contact div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+div.div-message,
+div.div-btn {
+  flex-grow: 1;
+  grid-column: 1 / span 2;
+}
+
+form div.div-message {
+  flex-grow: 1;
+}
+
+textarea.form-contact-textarea {
+  height: 10rem;
+  resize: none;
+}
+
+input.form-contact-input {
+  height: 3rem;
+}
+
+input.form-contact-input:focus,
+form textarea.form-contact-textarea:focus {
+  background: white;
+  border: 1px solid #a4cdf3;
+}
+
+input.form-contact-input,
+form textarea.form-contact-textarea {
+  background: #f6fafd;
+  width: 100%;
+  padding: 0.5rem;
+  outline: none;
+  border: 0.5px solid gray;
+  border-radius: 0.5rem;
+}
+
+.div-message label {
+  width: 100%;
+}
+
+form .all-labels {
+  width: 100%;
+}
+
+form div.div-btn {
+  align-items: center;
+}
+
+form.form-contact p {
+  margin-bottom: -0.5rem;
+  margin: 0.5rem 0;
+}
+
+button.btn-contact-submit {
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 2px black;
+  padding: 0.3rem 2rem;
+  background-color: #a4cdf3;
+  border: none;
+  color: black;
+  transition: all ease-in-out 0.3s;
+  width: 16rem;
+  height: 3rem;
+}
+
+button.btn-contact-submit:hover {
+  color: antiquewhite;
+  background-color: white;
+  color: #333;
+  border: 1.5px solid #a4cdf3;
+}
+
+h1.h1-form-contact {
+  width: 100vw;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  div.div-form-container {
+    padding-top: 6rem;
+  }
+
+  form.form-contact {
+    grid-template-columns: 1fr;
+  }
+
+  form.form-contact {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .form-contact-title {
+    margin-top: 1.8rem;
+    background-color: white;
+    color: #de9686;
+  }
+
+  div.div-message,
+  div.div-btn {
+    grid-column: 1 / span 1;
+  }
+
+  button.btn-contact-submit {
+    width: 100%;
+  }
+}
